@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio tag in HTML</title>
+</head>
+<body>
+    <h1>Audio tag in HTML</h1>
+
+    <h2>Simple audio tag:</h2>
+    <audio src="./ammayi.mp4"></audio>
+
+    <h2>audio tag with controls:</h2>
+    <audio src="./ammayi.mp4" controls></audio>
+
+    <h2>audio tag with autoplay, muted, loop:</h2>
+    <audio src="./ammayi.mp4" controls autoplay muted loop></audio>
+
+    <h2>Audio with source element:</h2>
+    <audio controls muted>
+        <source src="./ammayi.mp4" type="audio/mpeg">
+    </audio>
+
+    <h2>Audio with fallback content:</h2>
+    <audio src="./ammayi.mp4" controls>
+        This browser will not support the audio elemnt.
+    </audio>
+
+</body>
+</html>
