@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Attributes</title>
+</head>
+
+<body>
+    <h2>action Attributes:</h2>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>target Attributes:</h2>
+    <form action="/action_page.php" target="_blank">
+        <input type="text" name="" id="">
+        <input type="submit" name="" id="">
+    </form>
+
+    <h2>method="get" Attributes:</h2>
+    <form action="/action_page.php" method="get">
+        <input type="submit" name="" id="">
+    </form>
+    <h2>method="post" Attributes:</h2>
+    <form action="/action_page.php" method="post">
+        <input type="submit" name="" id="">
+    </form>
+
+    <h2>autocomplete Attributes:</h2>
+    <form action="/action_page.php" autocomplete="on">
+        <input type="name" name="" id="">
+    </form>
+
+    <h2>novalidate Attributes:</h2>
+    <form action="/action_page.php" novalidate>
+        <input type="text" name="" id="">
+        <input type="submit" name="" id="">
+    </form>
+
+    <h2>Form Elements:</h2>
+    <h3>input:</h3>
+    <input>
+
+    <h3>label:</h3>
+    <form>
+        <label>Username:</label><input type="text">
+    </form>
+
+    <h3>label with for Attribute:</h3>
+    <form>
+        <label for="username">Username:</label><input type="text" id="username">
+    </form>
+
+    <h3>select:</h3>
+    <form>
+        <!-- <label for="cars">Choose a car:</label> -->
+        <select>
+            <option>Volvo</option>
+            <option>Saab</option>
+            <option>Fiat</option>
+            <option>Audi</option>
+        </select>
+    </form>
+
+    <h3>textarea:</h3>
+    <form>
+        <textarea></textarea>
+    </form>
+
+    <h3>textarea rows and cols Attributes:</h3>
+    <form>
+        <textarea rows="5" cols="100"></textarea>
+    </form>
+
+    <h3>button:</h3>
+    <form>
+        <textarea rows="5" cols="100"></textarea>
+        <button>Send</button>
+    </form>
+
+    <h3>fieldset and legend:</h3>
+    <form>
+        <fieldset>
+            <legend>Application Details:</legend>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <h3>datalist:</h3>
+    <form>
+        <input list="browsers">
+        <datalist id="browsers">
+            <!-- <option value="">Edge</option> -->
+             <option value="Edge"></option>
+             <option value="Firefox"></option>
+             <option value="Chrome"></option>
+             <option value="Opera"></option>
+             <option value="Safari"></option>
+        </datalist>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum facilis, aliquam culpa cumque hic error iure facere ad nihil dolore possimus molestiae. Qui temporibus repudiandae odio itaque quidem, ipsam ex?</p>
+    </form>
+</body>
+
+</html>
