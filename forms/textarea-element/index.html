@@ -11,7 +11,72 @@
     <h1>TEXTAREA ATTRIBUTES</h1>
 
     <h3>autofocus: </h3>
-    <textarea autofocus>Enter any text</textarea>
+    <form>
+        <textarea autofocus>Enter any text</textarea>
+    </form>
+
+    <h3>cols: </h3>
+    <form>
+        <textarea cols="50">Enter any text</textarea>
+    </form>
+
+    <h3>dirname: </h3>
+    <form action="/action_page.php">
+        Text:
+        <textarea name="explanation" dirname="explanation.dir"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3>disabled: </h3>
+    <form>
+        <textarea disabled>This is disabled text</textarea>
+    </form>
+
+    <h3>form: </h3>
+    <form action="/action_page.php" id="usrform">
+        Name: <input type="text" name="usrname">
+        <input type="submit">
+    </form>
+    Feedback:
+    <textarea name="comment" form="usrform">Enter text here...</textarea>
+
+    <h3>maxlength: </h3>
+    <form>
+        <textarea maxlength="50">Enter text here...</textarea>
+    </form>
+
+    <h3>name: </h3>
+    <form action="/action_page.php">
+        <textarea name="comment">Enter text here...</textarea>
+        <input type="submit">
+    </form>
+
+    <h3>placeholder: </h3>
+    <form>
+        <textarea placeholder="Describe yourself here..."></textarea>
+    </form>
+
+    <h3>readonly: </h3>
+    <form>
+        <textarea readonly>This textarea for only reading...</textarea>
+    </form>
+
+    <h3>required: </h3>
+    <form action="/action_page.php">
+        <textarea name="comment" required></textarea>
+        <input type="submit">
+    </form>
+
+    <h3>rows: </h3>
+    <form>
+        <textarea rows="5">Enter text here...</textarea>
+    </form>
+
+    <h3>wrap: </h3>
+    <form>
+        <textarea wrap="hard" cols="50">This is wrapped textarea...</textarea>
+        <input type="submit">
+    </form>
 </body>
 
 </html>
