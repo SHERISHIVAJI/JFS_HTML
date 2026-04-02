@@ -8,14 +8,28 @@
 </head>
 
 <body>
+    <h3>with label, without value: </h3>
     <form>
         <label for="cars">Choose a car:</label>
 
-        <select id="cars">
+        <select id="cars" name="cars">
             <option label="Volvo">Volvo (Latin for "I roll")</option>
             <option label="Saab">Saab (Swedish Aeroplane AB)</option>
             <option label="Mercedes">Mercedes (Mercedes-Benz)</option>
             <option label="Audi">Audi (Auto Union Deutschland Ingolstadt)</option>
+        </select>
+        <input type="submit">
+    </form>
+
+    <h3>with label, value: </h3>
+    <form>
+        <label for="cars">Choose a car:</label>
+
+        <select id="cars" name="cars">
+            <option label="Volvo" value="Volvo">Volvo (Latin for "I roll")</option>
+            <option label="Saab" value="Saab">Saab (Swedish Aeroplane AB)</option>
+            <option label="Mercedes" value="Mercedes">Mercedes (Mercedes-Benz)</option>
+            <option label="Audi" value="Audi">Audi (Auto Union Deutschland Ingolstadt)</option>
         </select>
         <input type="submit">
     </form>
